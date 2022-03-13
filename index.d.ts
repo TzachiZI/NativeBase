@@ -1,3 +1,5 @@
+import { PickerItemProps, PickerProps } from "@react-native-picker/picker";
+
 declare module "native-base" {
 	import * as React from "react";
 	import * as ReactNative from "react-native";
@@ -23,7 +25,7 @@ declare module "native-base" {
 			padder?: boolean;
 		}
 
-		interface Picker extends ReactNative.PickerProps, Testable {
+		interface Picker extends PickerProps, Testable {
 			mode?: "dialog" | "dropdown";
 			supportedOrientations?: "portrait" | "landscape"
 			iosHeader?: string;
@@ -1000,7 +1002,7 @@ declare module "native-base" {
      */
 	export class Picker extends React.Component<NativeBase.Picker, any> { }
 	namespace Picker {
-		export class Item extends React.Component<ReactNative.PickerItemProps, any> { }
+		export class Item extends React.Component<PickerItemProps, any> { }
 	}
 	/**
      * NativeBase.List
