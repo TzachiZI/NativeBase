@@ -2,10 +2,10 @@ import React from 'react';
 import {
   Modal,
   View,
-  Platform,
-  DatePickerIOS,
-  DatePickerAndroid
+  Platform
 } from 'react-native';
+
+import {  DatePickerIOS, DatePickerAndroid} from '@react-native-community/datetimepicker'
 
 import variable from '../theme/variables/platform';
 import { PLATFORM } from '../theme/variables/commonColor';
